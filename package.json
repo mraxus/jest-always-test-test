@@ -1,0 +1,13 @@
+{
+  "name": "jest-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "fail": "jest --config=jest.config.failing.js"
+  },
+  "dependencies": {
+    "jest": "^22.4.3"
+  }
+}
