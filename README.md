@@ -32,3 +32,10 @@ module.exports = {
 ```
 
 the test suite includes tests in `test/` even though it's not configured to
+
+
+## Update 2018-04-13
+
+Turns out `testRegex` is matching file for absolute paths, not relative. This caused the problem as I had the absolute path like `/Users/me/src/js/jest-always-test-test`, where the folder `src` was interfering and accepting any directory to be a valid test location.
+
+Issue https://github.com/facebook/jest/issues/5974 has been submitted and updated. See more details regarding this issue there.
